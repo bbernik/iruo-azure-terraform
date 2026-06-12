@@ -1,0 +1,14 @@
+project          = "techsprint"
+environment      = "testing"
+location         = "westeurope"
+users_csv_path   = "users.example.csv"
+admin_username   = "azureadmin"
+allowed_ssh_cidr = "0.0.0.0/0"
+
+# Recommended: paste your own RSA public key and keep the private key outside Terraform state.
+# Azure Linux VM admin_ssh_key expects RSA in this provider version.
+# ssh_public_key = "ssh-rsa AAAA..."
+
+# The PDF examples mention B2s or D2s_v3. B2s is the cheaper exact fit for 2 vCPU / 4 GB RAM.
+app_vm_size  = "Standard_B2s"
+jump_vm_size = "Standard_B1s"

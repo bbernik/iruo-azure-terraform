@@ -1,0 +1,22 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.auto.tfvars
+crash.log
+crash.*.log
+
+# Terraform plan files can contain sensitive values
+tfplan
+*.tfplan
+plan.out
+
+# Never commit private keys / secrets
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*_rsa
+*_rsa.pub
+*.cred
+

@@ -1,0 +1,6 @@
+# cloud-init *.tpl datoteke su YAML (s Terraform interpolacijom), ne Smarty.
+# Bez ovoga ih GitHub Linguist krivo prikaze kao "Smarty".
+*.tpl linguist-language=YAML
+
+# Terraform datoteke
+*.tf linguist-language=HCL
